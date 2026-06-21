@@ -1,26 +1,22 @@
-# Italia Travel 2026 · v2
+# Italia Travel 2026 v3
 
-Static GitHub Pages travel dashboard.
+Static GitHub Pages site for the Northern Italy trip.
 
-## Deploy into Taehyoung-IVI.github.io
+## Deploy
 
-Copy this folder as `italia_travel_2026` into the root of `Taehyoung-IVI.github.io`, then commit and push.
+Copy this folder as `italia_travel_2026` inside `Taehyoung-IVI.github.io`, then commit and push.
 
-Final URL:
+The page will be available at:
 
-```
 https://Taehyoung-IVI.github.io/italia_travel_2026/
-```
 
-## v2 additions
+## v3 changes
 
-- Today / nearest-day dashboard card
-- Open-Meteo daily + hourly weather
-- Weather-aware advice
-- Google Maps search/directions buttons
-- Packing, kid-friendly, and rainy-day backup notes
-- Reservation/ticket checklist
-- Korean/English label toggle
-- Address privacy toggle
+- Korean/English toggle now changes the full UI, itinerary summaries, notes, checklist labels, weather text, and map button labels.
+- Checklist is interactive and saves completion state in the browser using localStorage.
+- Address privacy toggle remains available.
 
-Note: GitHub Pages is public. Exact lodging addresses are hidden by default in the UI but still exist in the HTML source. Remove them from the data if you want a more public-safe version.
+
+## v4 note
+
+The reservation checklist is intentionally read-only on the public page. It does not use browser localStorage and does not save per-person changes, so everyone sees the same status from the deployed file. To update an item, edit the `CHECKLIST` data in `index.html` and redeploy.
