@@ -1,41 +1,26 @@
-# Italia Travel 2026
+# Italia Travel 2026 · v2
 
-A small static GitHub Pages webpage for the northern Italy trip itinerary, with daily/hourly weather fetched client-side from Open-Meteo.
+Static GitHub Pages travel dashboard.
 
-## Files
+## Deploy into Taehyoung-IVI.github.io
 
-- `index.html` — the whole webpage: itinerary, styling, and JavaScript weather integration.
-- `robots.txt` — discourages search engines from crawling the page.
-- `.nojekyll` — tells GitHub Pages not to process this as a Jekyll site.
+Copy this folder as `italia_travel_2026` into the root of `Taehyoung-IVI.github.io`, then commit and push.
 
-## How to publish at `/italia_travel_2026/`
+Final URL:
 
-### Option A: User site repository
-
-1. Open or create your `YOUR_GITHUB_USERNAME.github.io` repository.
-2. Upload the entire `italia_travel_2026` folder to the repository root.
-3. Enable GitHub Pages for the repository root.
-4. Visit:
-
-```text
-https://YOUR_GITHUB_USERNAME.github.io/italia_travel_2026/
+```
+https://Taehyoung-IVI.github.io/italia_travel_2026/
 ```
 
-### Option B: Project site repository
+## v2 additions
 
-1. Create a public repository named `italia_travel_2026`.
-2. Upload `index.html`, `robots.txt`, and `.nojekyll` to that repository root.
-3. Enable GitHub Pages from the root of the main branch.
-4. Visit:
+- Today / nearest-day dashboard card
+- Open-Meteo daily + hourly weather
+- Weather-aware advice
+- Google Maps search/directions buttons
+- Packing, kid-friendly, and rainy-day backup notes
+- Reservation/ticket checklist
+- Korean/English label toggle
+- Address privacy toggle
 
-```text
-https://YOUR_GITHUB_USERNAME.github.io/italia_travel_2026/
-```
-
-## Privacy note
-
-This is a hidden-by-URL page, not a secure private page. The HTML includes `noindex,nofollow` and `robots.txt`, but anyone with the URL may be able to open it once it is published on GitHub Pages. Do not add passport numbers, booking codes, phone numbers, or other sensitive data.
-
-## Weather note
-
-The page uses the Open-Meteo Forecast API directly from the visitor's browser. Open-Meteo's forecast horizon is limited, so later trip dates may show a “check closer to the day” message until they come into range.
+Note: GitHub Pages is public. Exact lodging addresses are hidden by default in the UI but still exist in the HTML source. Remove them from the data if you want a more public-safe version.
